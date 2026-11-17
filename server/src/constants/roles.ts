@@ -1,0 +1,25 @@
+export enum UserRole {
+  SUPER_ADMIN = 'SUPER_ADMIN',
+  HOSPITAL_ADMIN = 'HOSPITAL_ADMIN',
+  DOCTOR = 'DOCTOR',
+  RECEPTIONIST = 'RECEPTIONIST',
+  NURSE = 'NURSE',
+  LABORATORY_TECHNICIAN = 'LABORATORY_TECHNICIAN',
+  PHARMACIST = 'PHARMACIST',
+  ACCOUNTANT = 'ACCOUNTANT',
+  PATIENT = 'PATIENT'
+}
+
+export const ALL_ROLES = Object.values(UserRole);
+
+export const CLINICAL_STAFF_ROLES = [
+  UserRole.DOCTOR,
+  UserRole.NURSE,
+  UserRole.SUPER_ADMIN,
+  UserRole.HOSPITAL_ADMIN
+];
+
+export const ADMIN_ROLES = [
+  UserRole.SUPER_ADMIN,
+  UserRole.HOSPITAL_ADMIN
+];
